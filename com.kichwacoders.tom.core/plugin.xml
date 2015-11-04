@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.core.contenttype.contentTypes">
+         <!-- declares a content type for TOM source files -->
+    	  <content-type id="tSource" name="TOM File"
+             base-type="org.eclipse.cdt.core.cSource"
+             file-extensions="t"
+             priority="high"/>
+   </extension> 
+   <extension
+         point="org.eclipse.cdt.core.language">
+      <language
+            class="com.kichwacoders.tom.core.TomLanguage"
+            id="com.kichwacoders.tom.core.tomlanguage"
+            name="TOM Language">
+         <contentType
+               id="com.kichwacoders.tom.core.tSource"></contentType>
+      </language>
+   </extension>
+
+</plugin>
