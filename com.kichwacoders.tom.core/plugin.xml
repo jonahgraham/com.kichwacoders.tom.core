@@ -12,7 +12,7 @@
    <extension
          point="org.eclipse.cdt.core.language">
       <language
-            class="com.kichwacoders.tom.core.TomLanguage"
+            class="org.eclipse.cdt.core.dom.ast.gnu.c.GCCLanguage"
             id="com.kichwacoders.tom.core.tomlanguage"
             name="TOM Language">
          <contentType
